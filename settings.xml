@@ -89,8 +89,30 @@
             <enabled>false</enabled>
           </snapshots>
         </repository>
-      </repositories>
-      <pluginRepositories>
+        <repository>
+            <id>miso.release</id>
+            <name>MISO Release Maven Repository</name>
+            <url>http://artifacts.oicr.on.ca/artifacts/miso-release</url>
+            <releases>
+              <enabled>true</enabled>
+            </releases>
+            <snapshots>
+              <enabled>false</enabled>
+                </snapshots>
+          </repository>
+          <repository>
+            <id>miso.snapshot</id>
+            <name>MISO Maven Snapshot Repository</name>
+            <url>http://artifacts.oicr.on.ca/artifacts/miso-snapshot</url>
+            <releases>
+              <enabled>false</enabled>
+            </releases>
+            <snapshots>
+              <enabled>true</enabled>
+            </snapshots>
+          </repository>
+    </repositories> 
+     <pluginRepositories>
         <pluginRepository>
           <releases>
             <updatePolicy>never</updatePolicy>
