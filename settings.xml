@@ -111,6 +111,19 @@
               <enabled>true</enabled>
             </snapshots>
           </repository>
+         <repository>
+           <id>atlassian-public</id>
+           <url>https://maven.atlassian.com/content/repositories/atlassian-public/</url>
+           <snapshots>
+             <enabled>true</enabled>
+             <updatePolicy>daily</updatePolicy>
+             <checksumPolicy>warn</checksumPolicy>
+           </snapshots>
+           <releases>
+             <enabled>true</enabled>
+             <checksumPolicy>warn</checksumPolicy>
+           </releases>
+         </repository>
     </repositories> 
      <pluginRepositories>
         <pluginRepository>
@@ -124,6 +137,17 @@
           <name>Central Repository</name>
           <url>http://repo.maven.apache.org/maven2</url>
         </pluginRepository>
+         <pluginRepository>
+           <id>atlassian-public</id>
+           <url>https://m2proxy.atlassian.com/repository/public</url>
+           <releases>
+             <enabled>true</enabled>
+             <checksumPolicy>warn</checksumPolicy>
+           </releases>
+           <snapshots>
+             <checksumPolicy>warn</checksumPolicy>
+           </snapshots>
+         </pluginRepository>
       </pluginRepositories>
     </profile>
   </profiles>
