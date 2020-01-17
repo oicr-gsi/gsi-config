@@ -7,6 +7,11 @@
       <url>https://wrench2.oicr.on.ca/artifactory/remote-repos</url>
       <name>Artifactory</name>
     </mirror>
+    <mirror>
+      <id>central-https</id>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
   </mirrors>
   <profiles>
     <profile>
@@ -135,7 +140,7 @@
           </snapshots>
           <id>central</id>
           <name>Central Repository</name>
-          <url>http://repo.maven.apache.org/maven2</url>
+          <url>https://repo.maven.apache.org/maven2</url>
         </pluginRepository>
          <pluginRepository>
            <id>atlassian-public</id>
